@@ -1,0 +1,7 @@
+<h2><%= @dog.name %></strong></h2><br>
+<%= @dog.breed.capitalize %><br>
+<%= @dog.age.capitalize %><br>
+<% @dog.employees.each do |employee| %>
+    <%= link_to employee.full_name, employee_path(employee) %><br>
+<% end %>    
+x
